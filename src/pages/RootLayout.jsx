@@ -21,7 +21,7 @@ const Rootlayout = () => {
   return (
     <div>
       {userIsLogin ? (
-        <div>
+        <div className="h-screen">
           <Header />
           <Menubar />
           <Outlet />
