@@ -36,7 +36,7 @@ const CheckOutPage = () => {
               <h4 className="text-xs sml:text-base">{`₹${totalPrice}.00`}</h4>
             </div>
             {showOrderSummary && (
-              <motion.div initial={{ y: 0 }} animate={{ y: "100vh" }}>
+              <motion.div>
                 {cart.map(({ id, title, price, image, productQuantity }) => (
                   <div
                     className="flex border-b items-center justify-between p-2 gap-1"
