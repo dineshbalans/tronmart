@@ -36,7 +36,7 @@ const CartPage = () => {
           </div>
         </div>
       ) : (
-        <div className="flex flex-wrap justify-between gap-10 xl:gap-0">
+        <div className="flex flex-wrap justify-between gap-10 xl:gap-0 min-h-[80vh]">
           {/* Cart */}
           <div className="w-full xl:w-[70%] text-ternary">
             <div className="border hidden mdl:flex text-center p-4 capitalize font-semibold">
