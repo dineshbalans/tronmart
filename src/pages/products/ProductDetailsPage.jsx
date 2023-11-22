@@ -62,7 +62,7 @@ const ProductDetailsPage = () => {
   };
 
   return (
-    <section className="p-5 md:p-10 2xl:container mx-auto space-y-10">
+    <section className="p-5 md:p-10 2xl:container mx-auto space-y-10 min-h-screen flex flex-col justify-center">
       <div className="flex flex-wrap lg:flex-nowrap justify-between gap-5">
         <div className="sml:hidden pt-6 pb-3">
           <span className="text-gray-500 text-sm">

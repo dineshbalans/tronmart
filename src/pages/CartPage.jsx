@@ -12,11 +12,12 @@ const CartPage = () => {
   const totalPrice = useSelector((state) => state.cart.totalPrice);
   const noOfProducts = useSelector((state) => state.cart.noOfProducts);
   return (
-    <section className="p-4 lgl:p-10 text-gray-500 space-y-10 2xl:container mx-auto mb-10">
+    <section className="p-4 lgl:p-10 text-gray-500 space-y-10 2xl:container
+      mx-auto mb-10 min-h-fit">
       <h1 className="font-semibold text-3xl text-ternary">Cart</h1>
 
       {cart.length === 0 ? (
-        <div className="w-full sml:w-1/2 mx-auto text-center space-y-3 pb-10">
+        <div className="w-full sml:w-1/2 mx-auto text-center space-y-3 pb-10 min-h-[80vh] flex flex-col justify-center">
           <img src={emptyCart} alt="" className="w-1/2 mx-auto" />
           <h1 className="text-3xl lg:text-4xl font-bold">Your Cart is Empty</h1>
           <h3 className="text-lg lg:text-xl font-medium">

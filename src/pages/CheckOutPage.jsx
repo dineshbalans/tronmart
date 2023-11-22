@@ -105,7 +105,7 @@ const CheckOutPage = () => {
         ) : (
           <div className="flex gap-12">
             <CheckOutForm totalPrice={totalPrice} />
-            <div className="w-[40%] sticky top-0 h-screen py-5 hidden lg:block">
+            <div className="w-[40%] sticky top-0 h-fit py-5 hidden lg:block">
               <h3 className="inputTitle">Your order</h3>
               <div className="border rounded-md">
                 <div className="p-4 flex justify-between border-b">
@@ -114,8 +114,8 @@ const CheckOutPage = () => {
                 </div>
                 {cart.map(({ id, title, price, image, productQuantity }) => (
                   <div
+                  key ={id}
                     className="flex justify-between p-4 items-center border-b"
-                    id={id}
                   >
                     <img src={image} alt="" className="w-1/6" />
                     <h3 className="text-xs w-1/2">{title}</h3>
