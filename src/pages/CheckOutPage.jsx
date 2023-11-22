@@ -103,7 +103,7 @@ const CheckOutPage = () => {
             </Link>
           </div>
         ) : (
-          <div className="flex gap-12">
+          <div className="flex gap-12 min-h-[90vh]">
             <CheckOutForm totalPrice={totalPrice} />
             <div className="w-[40%] sticky top-0 h-fit py-5 hidden lg:block">
               <h3 className="inputTitle">Your order</h3>
